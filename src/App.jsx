@@ -33,7 +33,7 @@ function App() {
         <div style={styles.contactBlock}>
           <iframe
             title="Nallaiah Wood Works Location"
-            src={mapsEmbedUrl}
+            src={"https://maps.app.goo.gl/nGw2B8tqA6snRt5y8?g_st=aw"}
             width="250"
             height="150"
             style={{ border: 0, borderRadius: "8px" }}
