@@ -21,9 +21,9 @@ function App() {
       <header style={styles.header}>
         {/* Left info block */}
         <div style={styles.infoBlock}>
-          <h1>NALLAIAH WOOD WORKS</h1>
-          <p>NALLAIAH (Lakshmanan)</p>
-          <p>Mobile: 9442919375, 8072563790</p>
+          <h1 style={{ color: "darkred" }}>NALLAIAH WOOD WORKS</h1>
+          <p style={{ color: "#333", fontWeight: "bold" }}>NALLAIAH (Lakshmanan)</p>
+          <p style={{ color: "#333", fontWeight: "bold" }}>Mobile: 9442919375, 8072563790</p>
           <p style={{ fontWeight: "bold", color: "#333", fontSize: "16px" }}>
             ஸ்ரீ மாரியம்மன் நகர், மாத்தார் ரோடு, காரைகாரண் குடியிருப்பு, காரைக்குடி – 630202
           </p>
