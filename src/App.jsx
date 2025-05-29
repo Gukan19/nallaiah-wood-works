@@ -11,9 +11,11 @@ const woodWorkSamples = [
 
 function App() {
   const mapsEmbedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.889941221593!2d78.33026881526042!3d10.066548992842876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf7caac0f3cc3%3A0xdbe2fa185ea60129!2sSree%20Mariyamman%20Nagar%2C%20Karaikudi!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9530543832347!2d78.33328249999999!3d10.0626854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf6a058597dc3%3A0x5a9241a592b8f67a!2sNallaiah%20Wood%20Works!5e0!3m2!1sen!2sin!4v1716975211377!5m2!1sen!2sin";
+
   const mapsLink =
-    "https://www.google.com/maps/search/?api=1&query=ஸ்ரீ மாரியம்மன் நகர், மாத்தார் ரோடு, காரைகாரண் குடியிருப்பு, காரைக்குடி – 630202";
+    "https://www.google.com/maps/place/Nallaiah+Wood+Works/@10.0626854,78.3332825,17z";
+
   const phoneNumber = "9442919375";
 
   return (
@@ -23,7 +25,9 @@ function App() {
         <div style={styles.infoBlock}>
           <h1 style={{ color: "darkred" }}>NALLAIAH WOOD WORKS</h1>
           <p style={{ color: "#333", fontWeight: "bold" }}>NALLAIAH (Lakshmanan)</p>
-          <p style={{ color: "#333", fontWeight: "bold" }}>Mobile: 9442919375, 8072563790</p>
+          <p style={{ color: "#333", fontWeight: "bold" }}>
+            Mobile: 9442919375, 8072563790
+          </p>
           <p style={{ fontWeight: "bold", color: "#333", fontSize: "16px" }}>
             ஸ்ரீ மாரியம்மன் நகர், மாத்தார் ரோடு, காரைகாரண் குடியிருப்பு, காரைக்குடி – 630202
           </p>
@@ -33,7 +37,7 @@ function App() {
         <div style={styles.contactBlock}>
           <iframe
             title="Nallaiah Wood Works Location"
-            src={"https://maps.app.goo.gl/nGw2B8tqA6snRt5y8?g_st=aw"}
+            src={mapsEmbedUrl}
             width="250"
             height="150"
             style={{ border: 0, borderRadius: "8px" }}
