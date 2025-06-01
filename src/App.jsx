@@ -58,21 +58,23 @@ const woodWorkSamples = [
   { title: "Sample 54", image: "/samples/plw18.jpg" },
   { title: "Sample 55", image: "/samples/plw19.jpg" },
   { title: "Sample 56", image: "/samples/plw20.jpg" },
-  { title: "Sample 57", image: "/samples/win1.jpg" }, // fixed typo here
+  { title: "Sample 57", image: "/samples/win1.jpg" },
 ];
 
 function App() {
-  const mapsEmbedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9530543832347!2d78.3332825!3d10.0626854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf6a058597dc3%3A0x5a9241a592b8f67a!2sNallaiah%20Wood%20Works!5e0!3m2!1sen!2sin!4v1716975211377!5m2!1sen!2sin";
+const mapsEmbedUrl =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9530543832347!2d78.3332825!3d10.0626854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf6a058597dc3%3A0x5a9241a592b8f67a!2sNallaiah%20Wood%20Works!5e0!3m2!1sen!2sin!4v1716975211377!5m2!1sen!2sin";
 
-  const mapsLink =
-    "https://www.google.com/maps/place/Nallaiah+Wood+Works/@10.0626854,78.3332825,17z";
+const mapsLink =
+  "https://www.google.com/maps/place/Nallaiah+Wood+Works/@10.0626854,78.3332825,17z";
+
 
   const phoneNumber = "9442919375";
 
   return (
     <div>
       <header style={styles.header}>
+        {/* Left info block */}
         <div style={styles.infoBlock}>
           <h1 style={{ color: "darkred" }}>NALLAIAH WOOD WORKS</h1>
           <p style={{ color: "#333", fontWeight: "bold" }}>NALLAIAH (Lakshmanan)</p>
@@ -84,6 +86,7 @@ function App() {
           </p>
         </div>
 
+        {/* Right contact block with map, link, call button */}
         <div style={styles.contactBlock}>
           <iframe
             title="Nallaiah Wood Works Location"
@@ -120,23 +123,11 @@ function App() {
           if (index % 2 === 0) {
             return (
               <div key={index} style={styles.row}>
-                <img
-                  src={sample.image}
-                  alt={sample.title}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "/samples/fallback.jpg"; // Add this file optionally
-                  }}
-                  style={styles.image}
-                />
+                <img src={sample.image} alt={sample.title} style={styles.image} />
                 {woodWorkSamples[index + 1] && (
                   <img
                     src={woodWorkSamples[index + 1].image}
                     alt={woodWorkSamples[index + 1].title}
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = "/samples/fallback.jpg";
-                    }}
                     style={styles.image}
                   />
                 )}
