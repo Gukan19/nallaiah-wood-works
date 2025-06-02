@@ -17,7 +17,7 @@ function App() {
     "https://www.google.com/maps?q=10.0672560,78.8133250"
 ;
 
-  const phoneNumber = "9442919375";
+  const phoneNumber = "9442919375","8072563790";
 
   return (
     <div>
