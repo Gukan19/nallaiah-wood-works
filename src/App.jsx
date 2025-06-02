@@ -46,7 +46,7 @@ function App() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <a href={mapsLink} target="_blank" rel="noopener noreferrer" style={styles.locationLink}>
+          <a href={mapsLink} target="https://maps.app.goo.gl/nGw2B8tqA6snRt5y8?g_st=aw" rel="noopener noreferrer" style={styles.locationLink}>
             Open Location in Maps
           </a>
 
