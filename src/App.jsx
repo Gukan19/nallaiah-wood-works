@@ -11,7 +11,7 @@ const woodWorkSamples = [
 
 function App() {
   const mapsEmbedUrl =
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.9530543832347!2d78.3332825!3d10.0626854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf6a058597dc3%3A0x5a9241a592b8f67a!2sNallaiah%20Wood%20Works!5e0!3m2!1sen!2sin!4v1716975211377!5m2!1sen!2sin";
+    "https://maps.app.goo.gl/nGw2B8tqA6snRt5y8?g_st=aw";
 
   const mapsLink =
     "https://maps.app.goo.gl/nGw2B8tqA6snRt5y8?g_st=aw";
