@@ -19,17 +19,19 @@ function App() {
   return (
     <div>
       <header style={styles.header}>
-        {/* Left info block */}
         <div style={styles.infoBlock}>
-          <h1>NALLAIAH WOOD WORKS</h1>
-          <p>NALLAIAH (Lakshmanan)</p>
-          <p>Mobile: 9442919375, 8072563790</p>
+          <h1 style={{ color: "darkred" }}>NALLAIAH WOOD WORKS</h1>
+          <p style={{ color: "black", fontWeight: "bold", fontSize: "18px" }}>
+            NALLAIAH (Lakshmanan)
+          </p>
+          <p style={{ color: "black", fontWeight: "bold", fontSize: "18px" }}>
+            Mobile: 9442919375, 8072563790
+          </p>
           <p style={{ fontWeight: "bold", color: "#333", fontSize: "16px" }}>
             ஸ்ரீ மாரியம்மன் நகர், மாத்தார் ரோடு, காரைகாரண் குடியிருப்பு, காரைக்குடி – 630202
           </p>
         </div>
 
-        {/* Right contact block with map, link, call button */}
         <div style={styles.contactBlock}>
           <iframe
             title="Nallaiah Wood Works Location"
@@ -62,23 +64,11 @@ function App() {
       </header>
 
       <div style={styles.gallery}>
-        {woodWorkSamples.map((sample, index) => {
-          if (index % 2 === 0) {
-            return (
-              <div key={index} style={styles.row}>
-                <img src={sample.image} alt={sample.title} style={styles.image} />
-                {woodWorkSamples[index + 1] && (
-                  <img
-                    src={woodWorkSamples[index + 1].image}
-                    alt={woodWorkSamples[index + 1].title}
-                    style={styles.image}
-                  />
-                )}
-              </div>
-            );
-          }
-          return null;
-        })}
+        {woodWorkSamples.map((sample, index) => (
+          <div key={index} style={styles.imageContainer}>
+            <img src={sample.image} alt={sample.title} style={styles.image} />
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -123,18 +113,16 @@ const styles = {
     cursor: "pointer",
   },
   gallery: {
-    display: "flex",
-    flexDirection: "column",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
     gap: "20px",
     padding: "20px",
   },
-  row: {
-    display: "flex",
-    justifyContent: "space-between",
-    gap: "20px",
+  imageContainer: {
+    width: "100%",
   },
   image: {
-    width: "50%",
+    width: "100%",
     height: "auto",
     objectFit: "cover",
     borderRadius: "8px",
