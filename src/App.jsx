@@ -7,6 +7,9 @@ const woodWorkSamples = [
   { title: "Sample 3", image: "/samples/wood3.jpg" },
   { title: "Sample 4", image: "/samples/wood4.jpg" },
   { title: "Sample 5", image: "/samples/wood5.jpg" },
+  { title: "Sample 6", image: "/samples/wood6.jpg" },
+  { title: "Sample 7", image: "/samples/wood7.jpg" },
+  { title: "Sample 8", image: "/samples/wood8.jpg" },
 ];
 
 function App() {
